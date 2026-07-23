@@ -1,7 +1,26 @@
 aid: augur
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/augur.png
 name: Augur
-description: Augur is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Augur, Inc. was a Boulder, Colorado startup (founded 2012) that offered a
+  cross-device attribution API using machine learning to recognize a unique device and its
+  owner across laptops, phones, and tablets without relying on cookies, serving ad-tech and
+  security customers to personalize experiences and improve conversion. Techstars-backed
+  (also iGan Partners and Right Side Capital), Augur raised roughly $1.16M before being
+  acquired by Wunderkind (formerly Bounce Exchange / BounceX) on 2017-05-04. The augur.io
+  domain no longer resolves to a live product origin (Cloudflare edge returns HTTP 522) and
+  no developer portal, API reference, or SDKs remain publicly reachable, so this profile is
+  retained as an inactive/acquired historical record rather than a live API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/augur/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +28,21 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: wunderkind
+x-acquired-date: '2017-05-04'
+x-domain-status: inactive-origin-522
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Attribution
+- Cross-Device
+- AdTech
+- Device Recognition
+- Machine Learning
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/augur-domain-security.yml
 - type: Website
   url: https://augur.io/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
