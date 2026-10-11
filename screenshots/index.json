@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "augur",
+    "captured_at": "2026-10-11T181121",
+    "source_url": "https://augur.io/",
+    "source_type": "Website",
+    "file": "augur-2026-10-11T181121.png",
+    "bytes": 79034,
+    "capture": "playwright-local"
+  }
+]
